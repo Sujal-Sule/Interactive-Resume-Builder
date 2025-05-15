@@ -568,3 +568,11 @@
 #downloadBtn:hover {
   background-color: #0056b3;
 }
+.education-fixed input,
+.education-entry input {
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
