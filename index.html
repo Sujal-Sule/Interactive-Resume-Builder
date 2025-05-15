@@ -34,12 +34,41 @@
           <input type="file" id="profilePic" name="profilePic" accept="image/*" />
         </details>
 
-        <details>
+        <details open>
+        <summary>Education</summary>
+        <!-- 10th and 12th Fixed Inputs -->
+        <div class="education-fixed">
+          <h4>10th Grade</h4>
+          <input type="text" name="tenthBoard" placeholder="Board (e.g., CBSE)" />
+          <input type="text" name="tenthSchool" placeholder="School Name" />
+          <input type="text" name="tenthYear" placeholder="Year of Passing" />
+          <input type="text" name="tenthPercent" placeholder="Percentage (e.g., 92%)" />
+          <h4>12th Grade</h4>
+          <input type="text" name="twelfthBoard" placeholder="Board (e.g., HSC)" />
+          <input type="text" name="twelfthSchool" placeholder="School Name" />
+          <input type="text" name="twelfthYear" placeholder="Year of Passing" />
+          <input type="text" name="twelfthPercent" placeholder="Percentage (e.g., 92%)" />
+        </div>
+        <!-- Dynamic College/University Inputs -->
+        <div id="educationSection">
+          <div class="education-entry">
+            <h4>Graduation</h4>
+            <input type="text" name="degree" placeholder="Degree (e.g., B.Sc, B.Tech)" />
+            <input type="text" name="institute" placeholder="Institute Name" />
+            <input type="text" name="year" placeholder="Year of Graduation" />
+            <input type="text" name="cgpa" placeholder="CGPA (e.g., 8.5)" />
+          </div>
+        </div>
+        <button type="button" id="addEducationBtn">+ Add Another Education</button>
+        </details>
+
+        <details open>
           <summary>Professional Summary</summary>
           <textarea name="summary" placeholder="Write a short summary..."></textarea>
         </details>
+        
 
-        <details>
+        <details open>
           <summary>Skills (comma separated)</summary>
           <input type="text" name="skills" placeholder="e.g. JavaScript, HTML, CSS" />
         </details>
